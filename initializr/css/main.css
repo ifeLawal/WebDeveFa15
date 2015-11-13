@@ -91,19 +91,32 @@ time, mark, audio, video {
      A Module is a more discrete component of the page. It is your navigation bars and your carousels and your dialogs and your widgets and so on. This is the meat of the page.
      *
      */
+     .ovverride{
+       margin-right: 0px;
+       margin-left: 0px;
+       padding-left: 0px;
+       padding-right: 0px;
+     }
+     .moveDown{
+    }
     .hero {
-      padding: 10px 0;
+      padding: 35px 0;
+      background-image: url("../img/HeaderImage.jpg");
+      background-size: 100%;
+      background-position: center;
      }
     .edm {
     }
 
+
     .playbutton {
-      width:20px;
-      height:20px;
+      width:30px;
+      height:30px;
     }
     .boardButtons {
-      width:20px;
-      height:20px;
+      width:30px;
+      height:30px;
+      cursor: pointer;;
     }
     .centerPlz {
       text-align: center;
@@ -114,27 +127,48 @@ time, mark, audio, video {
       background-color: #8226df;
       color: #000;
       padding: 10px 0px;
+      border: 1px solid #dddddd;
     }
     .audioInterface {
       text-align:center;
-      margin: 20px 0px;
+      margin: 15px 0px;
     }
     .button {
       padding-top: 8px;
-      margin: 15px 25px;
+      margin: 10px 25px;
       background-color: #951c99;
       color:#fff;
       height: 40px;
       border-radius: 5px;
       cursor: pointer;
+      -webkit-transition: 1s ease-in-out;
+      -moz-transition: 1s ease-in-out;
+      -o-transition: 1s ease-in-out;
+      transition: 1s ease-in-out;
     }
+    .tester{
+      margin:50px;
+      color: rgba(255, 0, 0, .3);
+      width:12%;
+    }
+    .button:hover + .tester{
+      -webkit-transform: rotateX(360deg) translate(3em,0);
+      -moz-transform: rotateX(360deg) translate(3em,0);
+      -o-transform: rotateY(360deg) translate(3em,0);
+      -ms-transform: rotateY(360deg) translate(3em,0);
+      transform: rotateZ(360deg) translate(3em,0);
+  }
     .volumeButton{
-      width:25px;
+      width:30px;
+    }
+    .board{
+      margin:10px 10px;
     }
     .category {
     }
     .sequencer{
       margin:30px;
+      text-align: center;
     }
 
 /* ==========================================================================
