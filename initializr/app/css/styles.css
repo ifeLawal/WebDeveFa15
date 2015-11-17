@@ -1,0 +1,298 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+/* 
+ * Base Rules
+ *
+ A Base rule is applied to an element using an element selector, a descendent selector, or a child selector, along with any pseudo-classes. It doesnΓÇÖt include any class or ID selectors. It is defining the default styling for how that element should look in all occurrences on the page.
+ *
+ */
+/* fonts */
+/* Example Usage:
+ *
+    @font-face{
+        font-family:"Sofia Pro Light";
+        src:url("../assets/fonts/0eaf6264-15ee-4251-826e-9c0a59e8395f.eot?#iefix");
+        src:url("../assets/fonts/0eaf6264-15ee-4251-826e-9c0a59e8395f.eot?#iefix") format("eot"),url("../assets/fonts/8d11b8a0-868c-4a53-8b26-9f0ccbd58247.woff2") format("woff2"),url("../assets/fonts/9b976f15-23b7-45cd-ad4b-59c95b2889f9.woff") format("woff"),url("../assets/fonts/864da3de-5a97-4ce6-a22b-22932ed4dfe0.ttf") format("truetype"),url("../assets/fonts/d5898683-1b2a-4b1b-8058-0c8db30e40cf.svg#d5898683-1b2a-4b1b-8058-0c8db30e40cf") format("svg");
+    }
+ *
+ */
+/* Fonts */
+/*$fBody: 'Raleway';
+$fLight: '300';
+$fNormal: '400';
+$fMedium: '500';
+$fBold: '700';*/
+/* Colors */
+/*$cBlack: #111;
+$cLightGrey: #eee;
+$cGrey: #333;
+$cRed: #ff0000;
+$cGreen: #00ff00;
+$cBlue: #0000ff;
+$cWhite: #a1a1a1;
+$cPink: #FF25A9;*/
+/* Colors + Use Cases */
+/*$cBody: $cBlack;
+$cHeadline: $cGrey;
+$cParagraph: #004A97;
+$cLink: $cRed;
+$cHover: $cBlue;
+$cBackground: $cLightGrey;
+$cButton: $cWhite;
+*/
+/* Responsive Breakpoints */
+/* Default Padding */
+/*$padding: 1.5em;*/
+/* Widths */
+/*$wrapper-pixel-width: 650px;
+$wrapper-percent-width: 90%;
+*/
+/* mixins */
+/*body {
+	background-color: $cBackground;
+	color: $cBody;
+	font-family: $fBody, sans-serif;
+	font-size: 16px;
+	font-weight: $fNormal;
+}
+h1 {
+	color: $cHeadline;
+	font-size: 2em;
+	font-weight: $fLight;
+}
+h2 {
+	color: $cHeadline;
+	font-size: 1.75em;
+	font-weight: $fNormal;
+}
+h3 {
+	color: $cHeadline;
+	font-size: 1.5em;
+	font-weight: $fMedium;
+}
+h4 {
+	color: $cHeadline;
+	font-size: 1.25em;
+	font-weight: $fBold;
+}
+h5 {
+	color: $cHeadline;
+}
+p {
+	color: $cParagraph;
+	font-size: 1em;
+}
+a {
+	color: $cLink;
+}
+img {
+	width: 90%;
+}
+ul {
+
+}
+li {
+
+}*/
+/* 
+ * Layout Rules
+ *
+ The major components, such as header, footer, articles.
+ *
+ */
+/*header {
+}
+
+.hero {
+
+}*/
+/*nav {
+
+}
+
+nav ul {
+	margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav li {
+	display: inline;
+    height: 30px;
+    margin-left: 10px;
+}*/
+/*section {
+
+}
+
+article {
+
+}
+.l-constrained {
+    max-width: $wrapper-pixel-width;
+    margin: 0 auto;
+}
+.l-fluid {
+	max-width: $wrapper-percent-width;
+}*/
+/*footer {
+
+}*/
+/*
+ * Module Rules
+ *
+ A Module is a more discrete component of the page. It is your navigation bars and your carousels and your
+ dialogs and your widgets and so on. This is the meat of the page. Modules sit inside Layout components.
+ Modules can sometimes sit within other Modules, too. Each Module should be designed to exist as a
+ standalone component.
+ *
+ */
+/*.button {
+	background-color: $cButton;
+	cursor: pointer;
+	display: block;
+	padding: 20px;
+	width: 200px;
+	height: 40px;
+}*/
+/* 
+ * State Rules
+ A state is something that augments and overrides all other styles. For example, an accordion section may be in a collapsed or expanded state. A message may be in a success or error state.
+ *
+ */
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+/* Desktop */
+/* Tablet */
+/* Mobile */
+/* Smaller Mobile */
+/* Specific Mobile Device Media Queries */
+/* ----------- iPhone 6+ ----------- */
+/* Portrait and Landscape */
+/* ----------- iPhone 6 ----------- */
+/* Portrait and Landscape */
+/* ----------- Galaxy S5 / Android ----------- */
+/* Portrait and Landscape */
+/* ----------- iPhone 5 and 5S ----------- */
+/* Portrait and Landscape */
+/* ----------- iPhone 4 and 4S ----------- */
+/* Portrait and Landscape */
+/*.error {
+	background-color: $cRed;
+}
+.ok {
+	background-color: $cGreen;
+}*/
+.ovverride {
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-left: 0px;
+  padding-right: 0px; }
+
+.hero {
+  padding: 35px 0;
+  background-image: url("../img/HeaderImage.jpg");
+  background-size: 100%;
+  background-position: center; }
+
+.playbutton {
+  width: 30px;
+  height: 30px; }
+
+.boardButtons {
+  width: 30px;
+  height: 30px;
+  cursor: pointer; }
+
+.centerPlz {
+  text-align: center; }
+
+.topnav {
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #8226df;
+  color: #000;
+  padding: 10px 0px;
+  border: 1px solid #dddddd; }
+
+.audioInterface {
+  text-align: center;
+  margin: 15px 0px; }
+
+.button {
+  padding-top: 8px;
+  margin: 10px 25px;
+  background-color: #951c99;
+  color: #fff;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 1s ease-in-out; }
+
+.tester {
+  margin: 50px;
+  color: rgba(255, 0, 0, 0.3);
+  width: 12%; }
+
+.button:hover + .tester {
+  -webkit-transform: rotateX(360deg) translate(3em, 0);
+  transform: rotateZ(360deg) translate(3em, 0); }
+
+.volumeButton {
+  width: 30px; }
+
+.board {
+  margin: 10px 10px; }
+
+.sequencer {
+  margin: 30px;
+  text-align: center; }
+
+
